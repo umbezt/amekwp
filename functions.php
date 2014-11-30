@@ -66,13 +66,3 @@ if ( ! function_exists('amk_paging_nav') ){
         echo '</ul>';
     }
 }
-
-// Search but only posts
-function SearchFilter($query) {
-    if ($query->is_search) {
-        $query->set('post_type', 'post');
-    }
-    return $query;
-}
-
-add_filter('pre_get_posts','SearchFilter');
