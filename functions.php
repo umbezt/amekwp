@@ -16,7 +16,7 @@ if( !function_exists('amk_setup')) :
         require_once('wp_bootstrap_navwalker.php');
 
         // all extra functionality
-        require_once('toolbox/functions.php');
+        require_once('library/functions.php');
 
         // Add support for post formats
         add_theme_support('post_formats', array('aside'));
