@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap 101 Template</title>
   <title>
     <?php
     global $page, $paged;
@@ -17,7 +16,7 @@
       echo " | $site_description";
 
     if ($paged >= 2 || $page >= 2)
-      echo ' | ' . sprintf(__('Page %s', 'lowe'), max($paged, $page));
+      echo ' | ' . sprintf(__('Page %s', 'amk'), max($paged, $page));
     ?>
   </title>
   <meta name="author" content=""/>
