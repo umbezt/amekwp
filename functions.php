@@ -1,13 +1,10 @@
 <?php
-/*
- * Theme Functions
- */
 
-// Constants
+// Define Constants
 
 define('THEMEROOT', get_stylesheet_directory_uri());
-define('IMAGES', THEMEROOT . '/static/images/');
-define('SCRIPTS', THEMEROOT . '/static/scripts/');
+define('IMAGES', THEMEROOT . '/assets/img/');
+define('SCRIPTS', THEMEROOT . '/assets/js/');
 
 // Theme setup
 
@@ -37,7 +34,7 @@ endif;
 
 add_action('after_setup_theme', 'amk_setup');
 
-// Scripts
+// Register Scripts and Styles
 function amk_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 
