@@ -44,22 +44,3 @@ function amk_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'amk_scripts' );
-
-// Display navigation to the next/previous set of posts
-if ( ! function_exists('amk_paging_nav') ){
-    function amk_paging_nav(){
-        echo '<ul class="pager">';
-        if( get_previous_posts_link() ){
-            echo '<li class="previous">';
-            previous_posts_link('&larr; Newer Posts');
-            echo '</li>';
-        }
-        if( get_next_posts_link() ){
-            echo '<li class="next">';
-            next_posts_link('Older Posts &rarr;');
-            echo '</li>';
-        }
-
-        echo '</ul>';
-    }
-}
