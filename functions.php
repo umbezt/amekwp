@@ -40,7 +40,7 @@ function amk_scripts() {
 
     wp_enqueue_script( 'jquery' );
 
-    wp_enqueue_script( 'bootstrap', SCRIPTS . 'bootstrap.js', true );
+    wp_enqueue_script( 'bootstrap', SCRIPTS . 'bootstrap.js', array('jquery'), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'amk_scripts' );
