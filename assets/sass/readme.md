@@ -1,1 +1,0 @@
-Place all sass in this directory, applications like Koala will automatically output the stylesheets in the css folder
