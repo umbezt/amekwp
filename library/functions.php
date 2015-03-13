@@ -8,3 +8,5 @@ function amk_admin_scripts(){
 }
 
 add_action('admin_enqueue_scripts', 'amk_admin_scripts');
+
+include('amk_readmore.php');
