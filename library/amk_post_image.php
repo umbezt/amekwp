@@ -1,0 +1,25 @@
+<?php
+/* Display Image from the_post_thumbnail or the first image of a post else display a default Image
+* Chose the size from "thumbnail", "medium", "large", "full" or your own defined size using filters.
+* USAGE: <?php echo amk_post_image(); ?>
+*/
+
+function amk_post_image($size = 'full') {
+  if (has_post_thumbnail()) {
+    $image_id = get_post_thumbnail_id();
+    $image_url = wp_get_attachment_image_src($image_id, $size);
+    $image_url = $image_url[0];
+  } else {
+    global $post, $posts;
+    $image_url = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $image_url = $matches [1] [0];
+//Defines a default image
+    if(empty($image_url)){
+      $image_url = IMAGES . "holder.js/320x320&theme=sky&text=Placeholder \n image";
+    }
+  }
+  return $image_url;
+}
