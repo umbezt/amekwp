@@ -15,6 +15,8 @@ get_header();
             <div class="col-md-12">
             <h2><?php the_title(); ?></h2>
                 <p><?php the_content(); ?></p>
+                <hr />
+                  <?php comments_template(); ?>
             </div>
         </div>
     <?php endif; ?>
@@ -22,4 +24,3 @@ get_header();
 </div>
 
 <?php get_footer();
-
