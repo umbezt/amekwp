@@ -36,7 +36,7 @@ function posttype_cpt()
         'supports'      => array('title', 'editor', 'thumbnail'),
         'exclude_from_search' => false,
     );
-    register_post_type( 'posttypes', $args );
+    register_post_type( 'posttype', $args );
     flush_rewrite_rules();
 }
-add_action('init', 'posttypes_cpt');
+add_action('init', 'posttype_cpt');
