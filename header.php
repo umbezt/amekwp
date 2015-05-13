@@ -8,7 +8,7 @@
     <?php
     global $page, $paged;
 
-    wp_title('|', true, 'right');
+    wp_title('::', true, 'right');
     bloginfo('name');
 
     $site_description = get_bloginfo('description', 'display');
