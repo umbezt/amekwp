@@ -34,7 +34,7 @@ function posttype_cpt()
         'show_in_menu'  => true,
         'show_ui'       => true,
         'supports'      => array('title', 'editor', 'thumbnail'),
-        'exclude_from_search' => true,
+        'exclude_from_search' => false,
     );
     register_post_type( 'posttypes', $args );
     flush_rewrite_rules();
