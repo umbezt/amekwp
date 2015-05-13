@@ -30,7 +30,6 @@ function posttype_cpt()
         'publicly_queryable' => true,
         'capability_type' => 'post',
         'menu_icon'     => 'dashicons-groups',
-        'menu_position' => 4,
         'query_var'     => true,
         'show_in_menu'  => true,
         'show_ui'       => true,
