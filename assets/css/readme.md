@@ -1,1 +1,0 @@
-Place all style sheets in this directory, also output sass into this folder
