@@ -1,0 +1,29 @@
+{
+  "name": "amekwp",
+  "version": "1.0.0",
+  "description": "Starter WP theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Amekmani/amekwp.git"
+  },
+  "keywords": [
+    "gulp-sass",
+    "gulp",
+    "gulp-watch"
+  ],
+  "author": "Oscar Mwanandimai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amekmani/amekwp/issues"
+  },
+  "homepage": "https://github.com/Amekmani/amekwp#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-watch": "^4.2.4"
+  }
+}

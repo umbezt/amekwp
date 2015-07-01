@@ -1,0 +1,30 @@
+{
+  "name": "AmekWP",
+  "version": "1.0.0",
+  "authors": [
+    "Oscar Mwanandimai <oscar.mwana@gmail.com>"
+  ],
+  "description": "Starter WP theme",
+  "keywords": [
+    "wordpress",
+    "sass",
+    "npm",
+    "gulp",
+    "bower",
+    "twitter",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/amekmani",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

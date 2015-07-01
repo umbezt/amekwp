@@ -1,16 +1,31 @@
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+bower_components
+node_modules
+
+
+
+
+# =========================
+
+# Operating System Files
+
+# =========================
+
+
+
+# OSX
+
+# =========================
+
+
+
 .DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
+
 
 # Thumbnails
 ._*
@@ -28,21 +43,36 @@ Temporary Items
 
 # Windows
 # =========================
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Windows image file caches
+
+Thumbs.db
+
+ehthumbs.db
+
+
+
+# Folder config file
+
+Desktop.ini
+
+
+
+# Recycle Bin used on file shares
+
+$RECYCLE.BIN/
+
+
+
+# Windows Installer files
+
+*.cab
+
+*.msi
+
+*.msm
+
+*.msp
+
 
 # General
 # =========================
