@@ -41,7 +41,6 @@ function amk_scripts() {
     wp_enqueue_script( 'jquery' );
 
     wp_enqueue_script( 'bootstrap', SCRIPTS . 'bootstrap.js', array('jquery'), null, true );
-    wp_enqueue_script( 'holder', SCRIPTS . 'holder.js', array('jquery'), null, true );
     wp_enqueue_script( 'app', SCRIPTS . 'app.js', array('jquery'), null, true );
 }
 
