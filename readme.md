@@ -8,10 +8,9 @@
 * Bootstrap
 * jQuery
 * wp-bootstrap-navwalker
+* oscarmwana/Fedanator
 
 ## Installation
-1. Run `npm install` (to install gulp + dependencies)
-2. Run `bower install` (to get bootstrap and jquery)
-3. Copy Bootstrap and jquery source into the relative `assets/css` and `assets/js` folders
-4. Run `gulp` (default task is watch)
+1. Run `./bootup.sh` (to install dependencies)
+4. Run `gulp` and `gulp watch`
 5. Happy coding :-)
