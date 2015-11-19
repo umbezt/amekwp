@@ -9,21 +9,16 @@
     <?php
     global $page, $paged;
 
-    wp_title('::', true, 'right');
-    bloginfo('name');
-
-    $site_description = get_bloginfo('description', 'display');
-    if ($site_description && (is_front_page()))
-      echo " :: $site_description";
+    wp_title('|', TRUE, 'right');
 
     if ($paged >= 2 || $page >= 2)
-      echo ' | ' . sprintf(__('Page %s', 'amk'), max($paged, $page));
+    echo ' | ' . sprintf(__('Page %s', 'amk'), max($paged, $page));
     ?>
   </title>
   <link rel="profile" href="http://gmpg.org/xfn/11"/>
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
   <link rel="shortcut icon" href="<?php echo IMAGES. 'favicon.ico'; ?>" type="image/x-icon">
-<link rel="icon" href="<?php echo IMAGES. 'favicon.ico'; ?>" type="image/x-icon">
+  <link rel="icon" href="<?php echo IMAGES. 'favicon.ico'; ?>" type="image/x-icon">
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -32,14 +27,14 @@
 
   <?php
   wp_nav_menu(array(
-    'menu' => 'primary',
-    'theme_location' => 'main',
-    'depth' => 2,
-    'container' => 'div',
-    'container_class' => 'collapse navbar-collapse',
-                    //'container_id'      => 'bs-example-navbar-collapse-1',
-    'menu_class' => 'nav navbar-nav',
-    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-    'walker' => new wp_bootstrap_navwalker())
+  'menu' => 'primary',
+  'theme_location' => 'main',
+  'depth' => 2,
+  'container' => 'div',
+  'container_class' => 'collapse navbar-collapse',
+  //'container_id'      => 'bs-example-navbar-collapse-1',
+  'menu_class' => 'nav navbar-nav',
+  'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+  'walker' => new wp_bootstrap_navwalker())
   );
   ?>
