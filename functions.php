@@ -3,8 +3,8 @@
 // Define Constants
 
 define('THEMEROOT', get_stylesheet_directory_uri());
-define('IMAGES', THEMEROOT . '/assets/img/');
-define('SCRIPTS', THEMEROOT . '/assets/js/');
+define('IMAGES', THEMEROOT . '/src/img/');
+define('SCRIPTS', THEMEROOT . '/src/js/');
 
 // Theme setup
 
